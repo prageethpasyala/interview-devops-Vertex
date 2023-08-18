@@ -39,7 +39,8 @@ Support files for Correvate's Devops engineer test
 
 ## 1.1 CI Pipeline
 Below is a sample Jenkinsfile that defines a pipeline script using the Jenkins declarative pipeline syntax. <br />
-```json
+
+```
 -Jenkinsfile-
 
 pipeline {
