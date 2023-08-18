@@ -1,0 +1,43 @@
+version: '2.2'
+volumes:
+  esdata:
+    driver: local
+
+networks:
+  correvate:
+
+services:
+  # Elasticsearch + Kibana
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - correvate
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.8.0
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    networks:
+      - correvate
+
+  # Log processor & forwarder
+  fluentbit:
+    build: fluentbit/.
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    networks:
+      - correvate
+
+  # TODO: include app...
+ 
