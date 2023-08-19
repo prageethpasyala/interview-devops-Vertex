@@ -1,0 +1,24 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+03:00:32.280 [main] INFO  u.c.c.hr.devops.DevopsTestApp - Starting DevopsTestApp on Prageeth-Pasyala's-MacBook---C02FT5RPML7H with PID 2270 (/Users/prageeth.pasyala/Downloads/interview-devops 3/my-api/target/my-api-1.0.1.1591234568.jar started by prageeth.pasyala in /Users/prageeth.pasyala/Downloads/interview-devops 3/my-api)
+03:00:32.284 [main] INFO  u.c.c.hr.devops.DevopsTestApp - No active profile set, falling back to default profiles: default
+03:00:33.547 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+03:00:33.556 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+03:00:33.557 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03:00:33.557 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+03:00:33.617 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03:00:33.617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1281 ms
+03:00:33.779 [main] INFO  u.c.c.hr.devops.DevopsTestApp - Starting awesome application uk.co.correvate.hr.devops:my-api:1.0.1.1591234568 ...
+03:00:33.902 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+03:00:34.105 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+03:00:34.124 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+03:00:34.148 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+03:00:34.161 [main] INFO  u.c.c.hr.devops.DevopsTestApp - Started DevopsTestApp in 2.236 seconds (JVM running for 2.723)
+03:01:11.632 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
